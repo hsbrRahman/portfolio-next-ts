@@ -6,9 +6,9 @@ import Photo from "@/components/Photo";
 
 export default function Home() {
   return (
-    <section className="h-full">
-      <div className="container mx-auto h-full">
-        <div className="pt-10 gap-6 xl:gap-0 flex flex-col xl:flex-row xl:pt-10 xl:pb-24 items-center justify-between ">
+    <section className="h-full ">
+      <div className="container mx-auto">
+        <div className="flex flex-col xl:flex-row items-center justify-between">
           <div className="text-center xl:text-left order-2 xl:order-none xl:inline flex flex-col items-center justify-center">
             <FlipWordsDemo />
             <div
@@ -23,7 +23,7 @@ export default function Home() {
                 deliver exceptional web development services.
               </h1>
             </div>
-            <div className="flex flex-col xl:gap-3 xl:flex-row items-center gap-3">
+            <div className="flex flex-col xl:flex-row items-center gap-3">
               <Button variant={"outline"} className="uppercase gap-1">
                 <span>Download CV</span>
                 <FiDownload className="text-xl" />
@@ -31,7 +31,7 @@ export default function Home() {
               <Socials />
             </div>
           </div>
-          <div className="order-1 xl:order-none mb-8 xl:mb-0">
+          <div className="order-1 xl:order-none relative">
             <Photo />
           </div>
         </div>
