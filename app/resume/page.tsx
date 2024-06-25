@@ -1,7 +1,11 @@
 "use client";
 import { FaHtml5, FaCss3, FaJs, FaReact, FaNode } from "react-icons/fa";
 import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
-import { TbBrandFirebase } from "react-icons/tb";
+import {
+  TbBrandMantine,
+  TbBrandFirebase,
+  TbBrandTypescript,
+} from "react-icons/tb";
 import { Tabs, TabsContent, TabsTrigger, TabsList } from "@/components/ui/tabs";
 import {
   Tooltip,
@@ -13,7 +17,8 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { motion } from "framer-motion";
 const about = {
   title: "About me",
-  description: "lorem ipsum",
+  description:
+    "Hello! I'm Hasibur Rahman, a passionate and dedicated front-end developer with a BSc degree in Computer Science",
   info: [
     {
       fieldName: "Name",
@@ -21,7 +26,7 @@ const about = {
     },
     {
       fieldName: "Phone",
-      fieldValue: "(+880) 1733103038",
+      fieldValue: "(+880)-1733103038",
     },
     {
       fieldName: "Experience",
@@ -34,10 +39,6 @@ const about = {
     {
       fieldName: "Email",
       fieldValue: "hasibur.developer@gmail.com",
-    },
-    {
-      fieldName: "Languages",
-      fieldValue: "Bengali, English",
     },
   ],
 };
@@ -96,12 +97,20 @@ const skills = {
       name: "CSS",
     },
     {
+      icon: <TbBrandMantine />,
+      name: "mantine UI",
+    },
+    {
       icon: <FaJs />,
       name: "Javascript",
     },
     {
       icon: <FaReact />,
       name: "react.js",
+    },
+    {
+      icon: <TbBrandTypescript />,
+      name: "typescript",
     },
     {
       icon: <SiNextdotjs />,
@@ -128,7 +137,7 @@ const Resume = () => {
       initial={{ opacity: 0 }}
       animate={{
         opacity: 1,
-        transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
+        transition: { delay: 1.4, duration: 0.4, ease: "easeIn" },
       }}
       className="min-h-[80vh flex items-center
      justify-center py-12 xl:py-0"
@@ -233,8 +242,57 @@ const Resume = () => {
                 </ul>
               </div>
             </TabsContent>
-            <TabsContent value="about" className="w-full">
-              about
+            <TabsContent
+              value="about"
+              className="w-full text-center xl:text-left"
+            >
+              <h3 className="text-4xl font-bold mb-2 hover:text-accent">
+                {about.title}
+              </h3>
+              {/* <p className="font-medium">
+                Hello! {`I'm`}{" "}
+                <span className="text-accent">Hasibur Rahman</span>, a
+                passionate and dedicated front-end developer with a BSc in
+                Computer Science. My journey into the world of web development
+                began during my university days when I was captivated by the
+                potential to create visually appealing and interactive web
+                experiences. With a solid foundation in computer science
+                principles, I have honed my skills in HTML, CSS, and JavaScript,
+                alongside modern libraries and frameworks such as React and
+                NextJs. <br />I thrive on turning complex problems into
+                intuitive, user-friendly interfaces and am driven by a
+                relentless curiosity to learn and adapt to new technologies. My
+                experience ranges from building responsive websites and
+                single-page applications to optimizing performance and ensuring
+                cross-browser compatibility. I believe the best user experiences
+                are crafted when creativity meets technical expertise, and I
+                strive to bring both to every project I undertake. <br /> When{" "}
+                {`I'm`} not coding, you can find me exploring the latest design
+                trends, looking for open-source projects to contribute, or
+                diving into a good book on the latest web technologies. I am
+                also an advocate for clean code and best practices, always
+                aiming to write maintainable and scalable code. {`Let's`}{" "}
+                connect and create something amazing together!
+              </p> */}
+              <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                {about.description}
+              </p>
+              <br />
+              <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
+                {about.info.map((info, index) => {
+                  return (
+                    <li
+                      key={index}
+                      className="flex items-center justify-center xl:justify-start gap-4 text-pretty"
+                    >
+                      <span className="text-white/60">{info.fieldName}: </span>
+                      <span className="text-xl hover:text-accent">
+                        {info.fieldValue}
+                      </span>
+                    </li>
+                  );
+                })}
+              </ul>
             </TabsContent>
           </div>
         </Tabs>

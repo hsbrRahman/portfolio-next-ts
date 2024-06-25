@@ -1,8 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
-import { FlipWords } from "@/components/ui/flip-words";
 import Socials from "@/components/Socials";
 import Photo from "@/components/Photo";
+import { FlipWordsDemo } from "@/components/FlipWords";
 
 export default function Home() {
   return (
@@ -37,20 +37,5 @@ export default function Home() {
         </div>
       </div>
     </section>
-  );
-}
-
-function FlipWordsDemo() {
-  const words = [
-    `Software - Engineer`,
-    "Web - Developer",
-    "Software - Developer",
-    "Frontend - Engineer",
-  ];
-
-  return (
-    <div className="h-[7rem] flex justify-start items-center text-4xl font-bold">
-      <FlipWords words={words} />
-    </div>
   );
 }
