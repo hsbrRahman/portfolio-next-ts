@@ -3,6 +3,7 @@ import { FiDownload } from "react-icons/fi";
 import Socials from "@/components/Socials";
 import Photo from "@/components/Photo";
 import { FlipWordsDemo } from "@/components/FlipWords";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -24,10 +25,17 @@ export default function Home() {
               </h1>
             </div>
             <div className="flex flex-col xl:flex-row items-center gap-3">
-              <Button variant={"outline"} className="uppercase gap-1">
-                <span>Download CV</span>
-                <FiDownload className="text-xl" />
-              </Button>
+              <Link
+                href={
+                  "https://drive.google.com/file/d/1y_laiCtY4iaUkOZzyNHFrh6r72EPPug4/view?usp=sharing"
+                }
+                target="_blank"
+              >
+                <Button variant={"outline"} className="uppercase gap-1">
+                  <span>Download CV</span>
+                  <FiDownload className="text-xl" />
+                </Button>
+              </Link>
               <Socials />
             </div>
           </div>
