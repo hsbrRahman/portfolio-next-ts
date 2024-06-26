@@ -8,7 +8,7 @@ export function FlipWordsDemo() {
   ];
 
   return (
-    <div className="h-[7rem] flex justify-start items-center text-4xl font-bold">
+    <div className="h-[7rem] flex justify-start items-center text-3xl font-bold">
       <FlipWords words={words} />
     </div>
   );
