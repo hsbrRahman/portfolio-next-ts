@@ -19,12 +19,12 @@ export default function TabsDemo() {
       ),
     },
     {
-      title: "Services",
-      value: "services",
+      title: "Blog App",
+      value: "blog",
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-          <p>Services tab</p>
-          {/* <DummyContent /> */}
+          <p>Blog App</p>
+          <DummyContent />
         </div>
       ),
     },
@@ -34,7 +34,7 @@ export default function TabsDemo() {
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
           <p>Playground tab</p>
-          {/* <DummyContent /> */}
+          <DummyContent />
         </div>
       ),
     },
@@ -44,7 +44,7 @@ export default function TabsDemo() {
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
           <p>Content tab</p>
-          {/* <DummyContent /> */}
+          <DummyContent />
         </div>
       ),
     },
@@ -54,7 +54,7 @@ export default function TabsDemo() {
       content: (
         <div className=" w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
           <p>Random tab</p>
-          {/* <DummyContent /> */}
+          <DummyContent />
         </div>
       ),
     },
@@ -71,6 +71,28 @@ const EcommerceContent = () => {
   return (
     <Image
       src="/assets/ecommerce.png"
+      alt="ecommerce image"
+      width="1000"
+      height="1000"
+      className="object-cover object-left-top h-[60%]  md:h-[90%] absolute xl:-bottom-10 inset-x-0 w-[90%] rounded-xl mx-auto"
+    />
+  );
+};
+const BlogContent = () => {
+  return (
+    <Image
+      src="/assets/work_in_progress.png"
+      alt="ecommerce image"
+      width="1000"
+      height="1000"
+      className="object-cover object-left-top h-[60%]  md:h-[90%] absolute xl:-bottom-10 inset-x-0 w-[90%] rounded-xl mx-auto"
+    />
+  );
+};
+const DummyContent = () => {
+  return (
+    <Image
+      src="/assets/work_in_progress.png"
       alt="dummy image"
       width="1000"
       height="1000"
