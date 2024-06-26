@@ -156,7 +156,9 @@ const Resume = () => {
           <div className="min-h-[70vh] w-full">
             <TabsContent value="experience" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                <h3 className="text-4xl font-bold ">{experience.title}</h3>
+                <h3 className="text-4xl font-bold hover:text-accent">
+                  {experience.title}
+                </h3>
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                   {experience.description}
                 </p>
@@ -185,7 +187,9 @@ const Resume = () => {
             </TabsContent>
             <TabsContent value="education" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                <h3 className="text-4xl font-bold ">{experience.title}</h3>
+                <h3 className="text-4xl font-bold hover:text-accent">
+                  {education.title}
+                </h3>
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                   {education.description}
                 </p>
@@ -215,7 +219,9 @@ const Resume = () => {
             <TabsContent value="skills" className="w-full h-full">
               <div className="flex flex-col gap-[30px]">
                 <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                  <h3 className="text-4xl font-bold ">{skills.title}</h3>
+                  <h3 className="text-4xl font-bold hover:text-accent">
+                    {skills.title}
+                  </h3>
                   <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                     {skills.description}
                   </p>

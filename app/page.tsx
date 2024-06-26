@@ -7,8 +7,8 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <section className="h-full ">
-      <div className="container mx-auto">
+    <section className="h-full">
+      <div className="container mx-auto min-w-[360px]">
         <div className="flex flex-col xl:flex-row items-center justify-between">
           <div className="text-center xl:text-left order-2 xl:order-none xl:inline flex flex-col items-center justify-center">
             <FlipWordsDemo />
