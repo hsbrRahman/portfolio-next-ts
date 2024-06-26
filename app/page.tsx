@@ -27,7 +27,7 @@ export default function Home() {
             <div className="flex flex-col xl:flex-row items-center gap-3">
               <Link
                 href={
-                  "https://drive.google.com/file/d/1dIh09VtJ5RS6q6_qCdmuWYTGnRLUngat/view?usp=sharing"
+                  "https://drive.google.com/file/d/1qGTxM3-W7l-_YdLkmcX0Cs7nL5-yY6Iv/view?usp=sharing"
                 }
                 target="_blank"
               >
