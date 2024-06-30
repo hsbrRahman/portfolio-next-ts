@@ -33,7 +33,7 @@ export default function Home() {
               >
                 <Button variant={"outline"} className="uppercase gap-1">
                   <span>Download CV</span>
-                  <FiDownload className="text-xl" />
+                  <FiDownload className="text-xl animate-bounce" />
                 </Button>
               </Link>
               <Socials />

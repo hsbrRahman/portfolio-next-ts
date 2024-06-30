@@ -11,7 +11,10 @@ const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(
 const HireMe: React.FC = () => {
   return (
     <div>
-      <Button onClick={() => (window.location.href = mailtoLink)}>
+      <Button
+        onClick={() => (window.location.href = mailtoLink)}
+        className="animate-pulse"
+      >
         Hire me
       </Button>
     </div>
