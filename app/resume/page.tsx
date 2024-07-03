@@ -147,7 +147,7 @@ const Resume = () => {
           defaultValue="experience"
           className="flex flex-col xl:flex-row gap-[60px]"
         >
-          <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0">
+          <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-4">
             <TabsTrigger value="experience">Experience</TabsTrigger>
             <TabsTrigger value="education">Education</TabsTrigger>
             <TabsTrigger value="skills">Skills</TabsTrigger>
@@ -233,7 +233,7 @@ const Resume = () => {
                         <TooltipProvider delayDuration={100}>
                           <Tooltip>
                             <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
-                              <div className="text-6xl group-hover:text-accent transition-all duration-300">
+                              <div className="text-6xl group-hover:text-accent transition-all duration-300 hover:animate-spin">
                                 {skill.icon}
                               </div>
                             </TooltipTrigger>
