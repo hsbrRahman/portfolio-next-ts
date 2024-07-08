@@ -46,7 +46,7 @@ const about = {
 const experience = {
   icon: "",
   title: "My experience",
-  description: "lorem ipsum",
+  description: "",
   items: [
     {
       company: "MoMagic Bangladesh",
@@ -64,7 +64,7 @@ const experience = {
 const education = {
   icon: "",
   title: "My education",
-  description: "lorem ipsum",
+  description: "",
   items: [
     {
       institution: "BRAC UNIVERSITY",
